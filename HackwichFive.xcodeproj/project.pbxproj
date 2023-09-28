@@ -16,6 +16,7 @@
 		3CC45B262AC63C5100851FF5 /* HackwichFiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC45B252AC63C5100851FF5 /* HackwichFiveTests.swift */; };
 		3CC45B302AC63C5100851FF5 /* HackwichFiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC45B2F2AC63C5100851FF5 /* HackwichFiveUITests.swift */; };
 		3CC45B322AC63C5100851FF5 /* HackwichFiveUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC45B312AC63C5100851FF5 /* HackwichFiveUITestsLaunchTests.swift */; };
+		3CC45B3F2AC644E500851FF5 /* secondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC45B3E2AC644E500851FF5 /* secondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3CC45B2B2AC63C5100851FF5 /* HackwichFiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackwichFiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CC45B2F2AC63C5100851FF5 /* HackwichFiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackwichFiveUITests.swift; sourceTree = "<group>"; };
 		3CC45B312AC63C5100851FF5 /* HackwichFiveUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackwichFiveUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3CC45B3E2AC644E500851FF5 /* secondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = secondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		3CC45B022AC63C5000851FF5 = {
 			isa = PBXGroup;
 			children = (
+				3CC45B3E2AC644E500851FF5 /* secondViewController.swift */,
 				3CC45B0D2AC63C5000851FF5 /* HackwichFive */,
 				3CC45B242AC63C5100851FF5 /* HackwichFiveTests */,
 				3CC45B2E2AC63C5100851FF5 /* HackwichFiveUITests */,
@@ -258,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC45B3F2AC644E500851FF5 /* secondViewController.swift in Sources */,
 				3CC45B132AC63C5000851FF5 /* ViewController.swift in Sources */,
 				3CC45B0F2AC63C5000851FF5 /* AppDelegate.swift in Sources */,
 				3CC45B112AC63C5000851FF5 /* SceneDelegate.swift in Sources */,

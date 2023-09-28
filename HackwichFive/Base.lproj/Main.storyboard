@@ -8,17 +8,47 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="uVd-A0-sEM">
             <objects>
-                <viewController id="2je-7R-dVm" sceneMemberID="viewController">
+                <viewController id="2je-7R-dVm" customClass="secondViewController" customModule="HackwichFive" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AIR-4K-y5t">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfK-dJ-n6g">
+                                <rect key="frame" x="112" y="218" width="169" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pgh-Yq-3jx">
+                                <rect key="frame" x="112" y="356" width="169" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwl-fI-D5J">
+                                <rect key="frame" x="124" y="613" width="145" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="My Fave Movies"/>
+                                <connections>
+                                    <action selector="buttonPressedTwo:" destination="2je-7R-dVm" eventType="touchUpInside" id="u5a-Ed-rDx"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="3Ex-5B-lXq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="3Qq-bu-Qju"/>
+                    <connections>
+                        <outlet property="bottomLabelTwo" destination="pgh-Yq-3jx" id="BWB-J4-dTY"/>
+                        <outlet property="topLabelTwo" destination="MfK-dJ-n6g" id="KaS-RO-lyD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z3u-h5-S7y" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -88,11 +118,11 @@
             </objects>
             <point key="canvasLocation" x="-1219" y="-333"/>
         </scene>
-        <!--Item 1-->
+        <!--Favorite Foods-->
         <scene sceneID="D6M-j5-BKy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gsb-zx-Bng" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 1" image="person.crop.rectangle" catalog="system" id="sta-IW-ElN"/>
+                    <tabBarItem key="tabBarItem" title="Favorite Foods" image="person.crop.rectangle" catalog="system" id="sta-IW-ElN"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3aM-tl-T7Y">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -107,11 +137,11 @@
             </objects>
             <point key="canvasLocation" x="-315.26717557251908" y="-636.61971830985919"/>
         </scene>
-        <!--Item 2-->
+        <!--Favorite Movies-->
         <scene sceneID="Gll-m9-UKf">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="HhN-6n-ag4" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Zt4-V4-zgy"/>
+                    <tabBarItem key="tabBarItem" title="Favorite Movies" image="powersleep" catalog="system" id="Zt4-V4-zgy"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Khp-hx-XFS">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -129,8 +159,12 @@
     </scenes>
     <resources>
         <image name="person.crop.rectangle" catalog="system" width="128" height="93"/>
+        <image name="powersleep" catalog="system" width="125" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
