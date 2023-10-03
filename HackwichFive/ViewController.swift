@@ -8,6 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var currentIndex: Int = 0
+    
+    let favoriteFoodsArray = ["Ramen", "Fruits", "Pasta", "Beef Stew", "Sandwiches"]
+    
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var bottomLabel: UILabel!
   
@@ -16,19 +21,20 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.topLabel.text = "My Favorite Foods:"
-        var currentIndex = 0
-        
+       
 
     }
     
    
     @IBAction func buttonPressed(_ sender: Any)
     {
+
+        bottomLabel.text = favoriteFoodsArray[currentIndex]
+        currentIndex = currentIndex + 1
+      
         
-        var favoriteFoodsArray = ["Ramen", "Fruits", "Pasta", "Beef Stew", "Sandwiches"]
-        self.bottomLabel.text = favoriteFoodsArray[0]
-        
-        
+            
+       
     }
     
 }
