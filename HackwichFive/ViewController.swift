@@ -28,12 +28,16 @@ class ViewController: UIViewController {
    
     @IBAction func buttonPressed(_ sender: Any)
     {
-
-        bottomLabel.text = favoriteFoodsArray[currentIndex]
-        currentIndex = currentIndex + 1
       
-        
-            
+        if favoriteFoodsArray.count > currentIndex
+        {
+            bottomLabel.text = favoriteFoodsArray[currentIndex]
+            currentIndex = currentIndex + 1
+        }
+        else
+        {
+            print("No more elements to display")
+        }
        
     }
     
